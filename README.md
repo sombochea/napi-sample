@@ -1,5 +1,5 @@
 # napi sample
 - napi-rs
 
-# constributors
+# contributors
 - sambo chea <sombochea@cubetiqs.com>
