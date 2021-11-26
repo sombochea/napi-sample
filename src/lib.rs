@@ -30,6 +30,8 @@ fn init(mut exports: JsObject) -> Result<()> {
   exports.create_named_method("sync", sync_fn)?;
 
   exports.create_named_method("sleep", sleep)?;
+
+  exports.create_named_method("say", say)?;
   Ok(())
 }
 
@@ -46,4 +48,11 @@ fn sleep(ctx: CallContext) -> Result<JsObject> {
   let task = AsyncTask(argument);
   let async_task = ctx.env.spawn(task)?;
   Ok(async_task.promise_object())
+}
+
+#[js_function(1)]
+fn say(ctx: CallContext) -> Result<JsNumber> {
+  let a: u32 = ctx.get::<JsNumber>(0)?.try_into()?;
+  let b: u32 = ctx.get::<JsNumber>(1)?.try_into()?;
+  ctx.env.create_uint32(a + b)
 }
