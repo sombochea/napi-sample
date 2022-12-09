@@ -1,3 +1,3 @@
-# `napi-sample-win32-x64-msvc`
+# `napi-rs-demo-win32-x64-msvc`
 
-This is the **x86_64-pc-windows-msvc** binary for `napi-sample`
+This is the **x86_64-pc-windows-msvc** binary for `napi-rs-demo`

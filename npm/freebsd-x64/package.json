@@ -1,15 +1,15 @@
 {
-  "name": "napi-rs-demo-win32-x64-msvc",
+  "name": "napi-rs-demo-freebsd-x64",
   "version": "0.0.0",
   "os": [
-    "win32"
+    "freebsd"
   ],
   "cpu": [
     "x64"
   ],
-  "main": "napi-rs-demo.win32-x64-msvc.node",
+  "main": "napi-rs-demo.freebsd-x64.node",
   "files": [
-    "napi-rs-demo.win32-x64-msvc.node"
+    "napi-rs-demo.freebsd-x64.node"
   ],
   "license": "MIT",
   "engines": {
